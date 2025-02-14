@@ -22,7 +22,7 @@ class ReplicateChat(Chat):
     def __init__(self, model_name):
         super().__init__(
             model_name=model_name,
-            model_id=model_name,
+            model_id=f"replicate/{model_name}",
             api_base="https://openai-proxy.replicate.com/v1",
         )
 
@@ -40,7 +40,7 @@ if HAS_ASYNC:
         def __init__(self, model_name):
             super().__init__(
                 model_name=model_name,
-                model_id=model_name,
+                model_id=f"replicate/{model_name}",
                 api_base="https://openai-proxy.replicate.com/v1",
             )
 
