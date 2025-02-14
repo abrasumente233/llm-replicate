@@ -1,0 +1,25 @@
+[project]
+name = "llm-replicate"
+version = "0.1.0"
+description = "Access replicate.com models via API"
+readme = "README.md"
+authors = [{name = "abrasumente"}]
+license = {text = "Apache-2.0"}
+classifiers = [
+    "License :: OSI Approved :: Apache Software License"
+]
+dependencies = [
+    "llm"
+]
+
+[project.urls]
+Homepage = "https://github.com/abrasumente233/llm-replicate"
+Changelog = "https://github.com/abrasumente233/llm-replicate/releases"
+Issues = "https://github.com/abrasumente233/llm-replicate/issues"
+CI = "https://github.com/abrasumente233/llm-replicate/actions"
+
+[project.entry-points.llm]
+replicate = "llm_replicate"
+
+[project.optional-dependencies]
+test = ["pytest"]
