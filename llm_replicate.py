@@ -10,8 +10,8 @@ except ImportError:
     HAS_ASYNC = False
 
 MODELS = (
-    "anthropic/claude-3.5-sonnet",
-    "deepseek-ai/deepseek-r1",
+    "claude-3.5-sonnet",
+    "claude-3.7-sonnet",
 )
 
 
@@ -23,7 +23,7 @@ class ReplicateChat(Chat):
         super().__init__(
             model_name=model_name,
             model_id=f"replicate/{model_name}",
-            api_base="https://openai-proxy.replicate.com/v1",
+            api_base="https://garbage.tea.lat/v1",
         )
 
     def __str__(self):
@@ -41,7 +41,7 @@ if HAS_ASYNC:
             super().__init__(
                 model_name=model_name,
                 model_id=f"replicate/{model_name}",
-                api_base="https://openai-proxy.replicate.com/v1",
+                api_base="https://garbage.tea.lat/v1",
             )
 
         def __str__(self):
